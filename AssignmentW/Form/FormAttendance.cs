@@ -463,7 +463,19 @@ namespace AssignmentW
         {
 
         }
+        void load2()
+        {
+            sqlconn.Open();
+            string sql = " Select ad.LastUpdate, ad.Date, ad.Status, s.NameStudent, c.IDClassSubject From ClassSubject c Inner join Student s on c.IDClass = s.IDClass inner join Attendance a on c.IDClassSubject = a.IDClassSubject inner join AttendanceDetails ad on a.AttID = ad.AttID inner join Class cl on c.IDClass = cl.IDClass where c.IDClassSubject = '1'";
+            SqlCommand cmd = new SqlCommand(sql, sqlconn);
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
 
+            dataGridView3.DataSource = dt;
+            sqlconn.Close();
+        }
         private void FormAttendance_Load(object sender, EventArgs e)
         {
             loadcombobx();
@@ -472,6 +484,7 @@ namespace AssignmentW
             load();
             loadcomboClass();
             loadAt();
+            load2();
         }
         private void buttoncreateDetail_Click(object sender, EventArgs e)
         {
