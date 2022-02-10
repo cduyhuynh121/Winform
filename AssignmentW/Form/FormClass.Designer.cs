@@ -276,7 +276,7 @@ namespace AssignmentW
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "FormClass";
-            this.Text = "FormClass";
+            this.Text = "Class";
             this.Load += new System.EventHandler(this.FormClass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

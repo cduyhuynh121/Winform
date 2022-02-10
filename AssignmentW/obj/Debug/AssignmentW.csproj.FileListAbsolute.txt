@@ -73,3 +73,24 @@ E:\Win\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCompileInputs.cache
 E:\Win\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
 E:\Win\AssignmentW\obj\Debug\AssignmentW.exe
 E:\Win\AssignmentW\obj\Debug\AssignmentW.pdb
+D:\Study\Assignment WinForm\N4\AssignmentW\bin\Debug\AssignmentW.exe.config
+D:\Study\Assignment WinForm\N4\AssignmentW\bin\Debug\AssignmentW.exe
+D:\Study\Assignment WinForm\N4\AssignmentW\bin\Debug\AssignmentW.pdb
+D:\Study\Assignment WinForm\N4\AssignmentW\bin\Debug\FontAwesome.Sharp.dll
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.csproj.AssemblyReference.cache
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormMainMenu.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormAttendance.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormClass.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormDegree.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormTeacher.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.Ministry.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormStudent.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormStuPro.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.FormSubject.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.Login.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.Properties.Resources.resources
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.csproj.GenerateResource.cache
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCompileInputs.cache
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.exe
+D:\Study\Assignment WinForm\N4\AssignmentW\obj\Debug\AssignmentW.pdb
