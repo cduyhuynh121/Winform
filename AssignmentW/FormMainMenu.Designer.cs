@@ -30,6 +30,7 @@ namespace AssignmentW
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconBtnSub = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconBtnTeacher = new FontAwesome.Sharp.IconButton();
@@ -39,6 +40,7 @@ namespace AssignmentW
             this.panelLogo = new System.Windows.Forms.Panel();
             this.iconButtonLogo = new FontAwesome.Sharp.IconButton();
             this.panelTitle = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.iconBtnMax = new FontAwesome.Sharp.IconButton();
             this.iconBtnMini = new FontAwesome.Sharp.IconButton();
             this.iconBtnClose = new FontAwesome.Sharp.IconButton();
@@ -46,7 +48,6 @@ namespace AssignmentW
             this.iconPictureLabel = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -70,6 +71,30 @@ namespace AssignmentW
             this.panelMenu.Size = new System.Drawing.Size(220, 606);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(124)))), ((int)(((byte)(148)))));
+            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton7.ForeColor = System.Drawing.Color.White;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
+            this.iconButton7.IconColor = System.Drawing.Color.White;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 32;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(0, 500);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton7.Size = new System.Drawing.Size(220, 60);
+            this.iconButton7.TabIndex = 7;
+            this.iconButton7.Text = "Attendance";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = false;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click_1);
             // 
             // iconBtnSub
             // 
@@ -251,6 +276,7 @@ namespace AssignmentW
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(124)))), ((int)(((byte)(148)))));
+            this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Controls.Add(this.iconBtnMax);
             this.panelTitle.Controls.Add(this.iconBtnMini);
             this.panelTitle.Controls.Add(this.iconBtnClose);
@@ -263,6 +289,17 @@ namespace AssignmentW
             this.panelTitle.TabIndex = 1;
             this.panelTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitle_Paint);
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(135, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Home";
             // 
             // iconBtnMax
             // 
@@ -322,6 +359,7 @@ namespace AssignmentW
             this.labelTitle.Size = new System.Drawing.Size(47, 25);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Home";
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
             // iconPictureLabel
             // 
@@ -347,35 +385,12 @@ namespace AssignmentW
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(124)))), ((int)(((byte)(148)))));
+            this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(883, 522);
             this.panelDesktop.TabIndex = 3;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(124)))), ((int)(((byte)(148)))));
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
-            this.iconButton7.IconColor = System.Drawing.Color.White;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 32;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 500);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton7.Size = new System.Drawing.Size(220, 60);
-            this.iconButton7.TabIndex = 7;
-            this.iconButton7.Text = "Attendance";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = false;
-            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click_1);
             // 
             // FormMainMenu
             // 
@@ -388,6 +403,7 @@ namespace AssignmentW
             this.Controls.Add(this.panelMenu);
             this.Name = "FormMainMenu";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelTitle.ResumeLayout(false);
@@ -417,6 +433,7 @@ namespace AssignmentW
         private FontAwesome.Sharp.IconButton iconBtnMax;
         private FontAwesome.Sharp.IconButton iconBtnMini;
         private FontAwesome.Sharp.IconButton iconButton7;
+        private System.Windows.Forms.Label label1;
     }
 }
 

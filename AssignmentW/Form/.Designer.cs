@@ -1,7 +1,7 @@
 ﻿
 namespace AssignmentW
 {
-    partial class FormStuPro
+    partial class FormStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,6 @@ namespace AssignmentW
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonsearch = new System.Windows.Forms.Button();
-            this.textBoxFind = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNAme = new System.Windows.Forms.TextBox();
@@ -43,68 +37,13 @@ namespace AssignmentW
             this.buttondelete = new System.Windows.Forms.Button();
             this.buttonedit = new System.Windows.Forms.Button();
             this.buttonCreate = new System.Windows.Forms.Button();
+            this.buttonsearch = new System.Windows.Forms.Button();
+            this.textBoxFind = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonsearch
-            // 
-            this.buttonsearch.Location = new System.Drawing.Point(716, 12);
-            this.buttonsearch.Name = "buttonsearch";
-            this.buttonsearch.Size = new System.Drawing.Size(71, 23);
-            this.buttonsearch.TabIndex = 34;
-            this.buttonsearch.Text = "Search";
-            this.buttonsearch.UseVisualStyleBackColor = true;
-            this.buttonsearch.Click += new System.EventHandler(this.buttonsearch_Click);
-            // 
-            // textBoxFind
-            // 
-            this.textBoxFind.Location = new System.Drawing.Point(547, 14);
-            this.textBoxFind.Name = "textBoxFind";
-            this.textBoxFind.Size = new System.Drawing.Size(163, 20);
-            this.textBoxFind.TabIndex = 33;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 54);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(537, 385);
-            this.dataGridView1.TabIndex = 28;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBoxType);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBoxNAme);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.buttonCancel);
-            this.panel1.Controls.Add(this.buttondelete);
-            this.panel1.Controls.Add(this.buttonedit);
-            this.panel1.Controls.Add(this.buttonCreate);
-            this.panel1.Location = new System.Drawing.Point(542, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 385);
-            this.panel1.TabIndex = 27;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "ID";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(15, 178);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 20);
-            this.textBox1.TabIndex = 26;
             // 
             // textBoxType
             // 
@@ -134,9 +73,9 @@ namespace AssignmentW
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(11, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Name";
+            this.label1.Text = "ID";
             // 
             // buttonCancel
             // 
@@ -178,7 +117,47 @@ namespace AssignmentW
             this.buttonCreate.UseVisualStyleBackColor = true;
             this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
             // 
-            // FormStuPro
+            // buttonsearch
+            // 
+            this.buttonsearch.Location = new System.Drawing.Point(716, 12);
+            this.buttonsearch.Name = "buttonsearch";
+            this.buttonsearch.Size = new System.Drawing.Size(71, 23);
+            this.buttonsearch.TabIndex = 43;
+            this.buttonsearch.Text = "Search";
+            this.buttonsearch.UseVisualStyleBackColor = true;
+            // 
+            // textBoxFind
+            // 
+            this.textBoxFind.Location = new System.Drawing.Point(547, 14);
+            this.textBoxFind.Name = "textBoxFind";
+            this.textBoxFind.Size = new System.Drawing.Size(163, 20);
+            this.textBoxFind.TabIndex = 42;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(4, 54);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(537, 385);
+            this.dataGridView1.TabIndex = 37;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBoxType);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.textBoxNAme);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.buttonCancel);
+            this.panel1.Controls.Add(this.buttondelete);
+            this.panel1.Controls.Add(this.buttonedit);
+            this.panel1.Controls.Add(this.buttonCreate);
+            this.panel1.Location = new System.Drawing.Point(542, 54);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 385);
+            this.panel1.TabIndex = 36;
+            // 
+            // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,9 +166,9 @@ namespace AssignmentW
             this.Controls.Add(this.textBoxFind);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Name = "FormStuPro";
-            this.Text = "FormStuPro";
-            this.Load += new System.EventHandler(this.FormStuPro_Load);
+            this.Name = "FormStudent";
+            this.Text = "FormStudent";
+            this.Load += new System.EventHandler(this.FormStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -199,12 +178,7 @@ namespace AssignmentW
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonsearch;
-        private System.Windows.Forms.TextBox textBoxFind;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+
         private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxNAme;
@@ -213,5 +187,9 @@ namespace AssignmentW
         private System.Windows.Forms.Button buttondelete;
         private System.Windows.Forms.Button buttonedit;
         private System.Windows.Forms.Button buttonCreate;
+        private System.Windows.Forms.Button buttonsearch;
+        private System.Windows.Forms.TextBox textBoxFind;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

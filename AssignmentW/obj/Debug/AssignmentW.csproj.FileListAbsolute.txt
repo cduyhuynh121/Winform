@@ -22,16 +22,16 @@ D:\Study\Assignment WinForm\New1\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCo
 D:\Study\Assignment WinForm\New1\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
 D:\Study\Assignment WinForm\New1\AssignmentW\obj\Debug\AssignmentW.exe
 D:\Study\Assignment WinForm\New1\AssignmentW\obj\Debug\AssignmentW.pdb
-D:\Study\Assignment WinForm\New2\AssignmentW\bin\Debug\AssignmentW.exe.config
-D:\Study\Assignment WinForm\New2\AssignmentW\bin\Debug\AssignmentW.exe
-D:\Study\Assignment WinForm\New2\AssignmentW\bin\Debug\AssignmentW.pdb
-D:\Study\Assignment WinForm\New2\AssignmentW\bin\Debug\FontAwesome.Sharp.dll
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.csproj.AssemblyReference.cache
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.FormMainMenu.resources
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.FormStuPro.resources
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.Properties.Resources.resources
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.csproj.GenerateResource.cache
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCompileInputs.cache
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.exe
-D:\Study\Assignment WinForm\New2\AssignmentW\obj\Debug\AssignmentW.pdb
+E:\A\AssignmentW\bin\Debug\AssignmentW.exe.config
+E:\A\AssignmentW\bin\Debug\AssignmentW.exe
+E:\A\AssignmentW\bin\Debug\AssignmentW.pdb
+E:\A\AssignmentW\bin\Debug\FontAwesome.Sharp.dll
+E:\A\AssignmentW\obj\Debug\AssignmentW.csproj.AssemblyReference.cache
+E:\A\AssignmentW\obj\Debug\AssignmentW.csproj.SuggestedBindingRedirects.cache
+E:\A\AssignmentW\obj\Debug\AssignmentW.FormMainMenu.resources
+E:\A\AssignmentW\obj\Debug\AssignmentW.Properties.Resources.resources
+E:\A\AssignmentW\obj\Debug\AssignmentW.csproj.GenerateResource.cache
+E:\A\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCompileInputs.cache
+E:\A\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
+E:\A\AssignmentW\obj\Debug\AssignmentW.exe
+E:\A\AssignmentW\obj\Debug\AssignmentW.pdb

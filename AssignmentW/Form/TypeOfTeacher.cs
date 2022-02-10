@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace AssignmentW
 {
-    public partial class FormStuPro : Form
+    public partial class FormStudent : Form
     {
         private SqlConnection sqlconn;
 
-        public FormStuPro()
+        public FormStudent()
         {
             InitializeComponent();
             sqlconn = new SqlConnection(Properties.Settings.Default.DB.ToString());
@@ -23,7 +23,7 @@ namespace AssignmentW
         void load()
         {
             sqlconn.Open();
-            string sql = " SELECT * FROM StudyProgram";
+            string sql = " SELECT * FROM TyeOfTeacher";
             SqlCommand cmd = new SqlCommand(sql, sqlconn);
             cmd.CommandType = CommandType.Text;
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -38,12 +38,14 @@ namespace AssignmentW
         {
             try
             {
+                //sqlconn = new SqlConnection(Properties.Settings.Default.DB.ToString());
                 sqlconn.Open();
                 SqlCommand sqlcmd = new SqlCommand();
-                sqlcmd.CommandText = "INSERT INTO  StudyProgram (NamePro, Type) VALUES (@Name, @Type)";
+                sqlcmd.CommandText = "INSERT INTO  TyeOfTeacher (IDTypeTeacher, NameTypeTeahcher) VALUES (@Name, @Type)";
                 sqlcmd.Connection = sqlconn;
                 sqlcmd.Parameters.AddWithValue("@Name", textBoxNAme.Text);
                 sqlcmd.Parameters.AddWithValue("@Type", textBoxType.Text);
+
                 if (sqlcmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("The StudyProgram is inserted to the database.");
@@ -62,15 +64,16 @@ namespace AssignmentW
         {
             try
             {
+                sqlconn = new SqlConnection(Properties.Settings.Default.DB.ToString());
                 sqlconn.Open();
                 SqlCommand sqlcmd = new SqlCommand();
-                sqlcmd.CommandText = "update StudyProgram set NamePro = @Name, Type = @Type where IDPro = @ID";
+                sqlcmd.CommandText = "update TyeOfTeacher set  NameTypeTeahcher = @Type where IDTypeTeacher  = @ID";
                 sqlcmd.Connection = sqlconn;
-                sqlcmd.Parameters.AddWithValue("@Name", textBoxNAme.Text);
                 sqlcmd.Parameters.AddWithValue("@Type", textBoxType.Text);
-                sqlcmd.Parameters.AddWithValue("@ID", textBox1.Text);
+                sqlcmd.Parameters.AddWithValue("@ID", textBoxNAme.Text);
+
                 sqlcmd.ExecuteNonQuery();
-                MessageBox.Show("The StudyProgram is update to the database.");
+                MessageBox.Show("The Degree Type is update to the database.");
                 sqlconn.Close();
                 load();
             }
@@ -82,18 +85,19 @@ namespace AssignmentW
 
         private void buttondelete_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != string.Empty)
+            if (textBoxNAme.Text != string.Empty)
             {
                 DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this employee ? ", "Delete Employee", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
                 if (dialogResult == DialogResult.Yes)
                 {
                     try
                     {
+                        sqlconn = new SqlConnection(Properties.Settings.Default.DB.ToString());
                         sqlconn.Open();
                         SqlCommand sqlcmd = new SqlCommand();
-                        sqlcmd.CommandText = "delete from StudyProgram where IDPro = @ID";
+                        sqlcmd.CommandText = "delete from TyeOfTeacher where IDTypeTeacher = @ID";
                         sqlcmd.Connection = sqlconn;
-                        sqlcmd.Parameters.AddWithValue("@ID", textBox1.Text);
+                        sqlcmd.Parameters.AddWithValue("@ID", textBoxNAme.Text);
                         sqlcmd.ExecuteNonQuery();
                         MessageBox.Show("Delete Succescly!");
                         sqlconn.Close();
@@ -107,10 +111,8 @@ namespace AssignmentW
             }
         }
 
-
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
             textBoxNAme.Text = "";
             textBoxType.Text = "";
         }
@@ -120,7 +122,7 @@ namespace AssignmentW
             try
             {
                 sqlconn.Open();
-                string sql = " SELECT NamePro, Type FROM StudyProgram where NamePro = @Name OR Type = @Name ";
+                string sql = " SELECT IDTypeTeacher , NameTypeTeahcher  FROM TyeOfTeacher where IDTypeTeacher = @Name OR NameTypeTeahcher = @Name ";
                 SqlCommand cmd = new SqlCommand(sql, sqlconn);
                 cmd.Parameters.AddWithValue("@Name", textBoxFind.Text);
                 cmd.CommandType = CommandType.Text;
@@ -136,20 +138,19 @@ namespace AssignmentW
             }
         }
 
-        private void FormStuPro_Load(object sender, EventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            textBoxNAme.Text = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+            textBoxType.Text = dataGridView1.Rows[numrow].Cells[1].Value.ToString();
+
+        }
+
+        private void FormStudent_Load(object sender, EventArgs e)
         {
             load();
         }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            int numrow;
-            numrow = e.RowIndex;
-            textBoxNAme.Text = dataGridView1.Rows[numrow].Cells[1].Value.ToString();
-            textBoxType.Text = dataGridView1.Rows[numrow].Cells[2].Value.ToString();
-            textBox1.Text = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
-        }
-
     }
 }
+
