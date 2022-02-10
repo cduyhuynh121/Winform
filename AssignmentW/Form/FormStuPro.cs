@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AssignmentW
 {
-    public partial class FormStudent : Form
+    public partial class FormStuPro : Form
     {
-        public FormStudent()
+        public FormStuPro()
         {
             InitializeComponent();
         }

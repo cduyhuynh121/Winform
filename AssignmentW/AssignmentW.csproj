@@ -53,6 +53,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FormStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormStudent.Designer.cs">
+      <DependentUpon>FormStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormStuPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormStuPro.Designer.cs">
+      <DependentUpon>FormStuPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormAttendance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,18 +94,6 @@
     </Compile>
     <Compile Include="Form\FormTeacher.Designer.cs">
       <DependentUpon>FormTeacher.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\FormStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\FormStudent.Designer.cs">
-      <DependentUpon>FormStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\FormStudyProgram.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\FormStudyProgram.Designer.cs">
-      <DependentUpon>FormStudyProgram.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>

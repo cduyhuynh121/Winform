@@ -47,6 +47,7 @@ namespace AssignmentW
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(249, 118, 176);
         }
 
         //Method
@@ -92,7 +93,7 @@ namespace AssignmentW
 
         private void openchilForm(Form childForm)
         {
-            if (iconPictureLabel != null)
+            if (curchildForm != null)
             {
                 //Open only form
                 curchildForm.Close();
@@ -122,42 +123,54 @@ namespace AssignmentW
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color1);
-            //openchilForm(new ());
+            openchilForm(new FormStuPro());
         }
 
         //Btn Class
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color2);
+            openchilForm(new FormClass());
         }
 
-        //Btn Teacher
+        //Btn Student
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color3);
+            openchilForm(new FormStudent());
         }
 
-        //Btn Subject
+        //Btn Teacher
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color4);
+            openchilForm(new FormTeacher());
         }
 
         //Btn Degree
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color5);
+            openchilForm(new FormDegree());
         }
 
-        //Btn Attendance
+        //Btn Subject
         private void iconButton6_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBcolor.color6);
+            openchilForm(new FormSubject());
+        }
+
+        //Btn Attendance
+        private void iconButton7_Click_1(object sender, EventArgs e)
+        {
+            ActivateBtn(sender, RGBcolor.color7);
+            openchilForm(new FormAttendance());
         }
 
         private void panelTitle_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         //Btn logo
@@ -181,7 +194,7 @@ namespace AssignmentW
         //Drop & drag
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
-
+        
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wMsg, int wParam, int lParam);
 
@@ -212,9 +225,5 @@ namespace AssignmentW
             WindowState = FormWindowState.Minimized;
         }
 
-        private void iconButton7_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
