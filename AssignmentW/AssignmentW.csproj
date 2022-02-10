@@ -102,6 +102,12 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\Ministry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Ministry.Designer.cs">
+      <DependentUpon>Ministry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormMainMenu.resx">
@@ -115,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormDegree.resx">
       <DependentUpon>FormDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormTeacher.resx">
+      <DependentUpon>FormTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Ministry.resx">
+      <DependentUpon>Ministry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TypeOfTeacher.resx">
       <DependentUpon>TypeOfTeacher.cs</DependentUpon>
