@@ -1,0 +1,12 @@
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\bin\Debug\AssignmentW.exe.config
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\bin\Debug\AssignmentW.exe
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\bin\Debug\AssignmentW.pdb
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\bin\Debug\FontAwesome.Sharp.dll
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.csproj.AssemblyReference.cache
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.FormMainMenu.resources
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.Properties.Resources.resources
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.csproj.GenerateResource.cache
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.csproj.CoreCompileInputs.cache
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.csproj.CopyComplete
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.exe
+D:\Study\Assignment WinForm\AssignmentW\AssignmentW\obj\Debug\AssignmentW.pdb
