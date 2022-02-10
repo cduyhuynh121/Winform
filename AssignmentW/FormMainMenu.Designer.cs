@@ -40,7 +40,6 @@ namespace AssignmentW
             this.panelLogo = new System.Windows.Forms.Panel();
             this.iconButtonLogo = new FontAwesome.Sharp.IconButton();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.iconBtnMax = new FontAwesome.Sharp.IconButton();
             this.iconBtnMini = new FontAwesome.Sharp.IconButton();
             this.iconBtnClose = new FontAwesome.Sharp.IconButton();
@@ -276,7 +275,6 @@ namespace AssignmentW
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(124)))), ((int)(((byte)(148)))));
-            this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Controls.Add(this.iconBtnMax);
             this.panelTitle.Controls.Add(this.iconBtnMini);
             this.panelTitle.Controls.Add(this.iconBtnClose);
@@ -289,17 +287,6 @@ namespace AssignmentW
             this.panelTitle.TabIndex = 1;
             this.panelTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitle_Paint);
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(135, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 25);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Home";
             // 
             // iconBtnMax
             // 
@@ -433,7 +420,6 @@ namespace AssignmentW
         private FontAwesome.Sharp.IconButton iconBtnMax;
         private FontAwesome.Sharp.IconButton iconBtnMini;
         private FontAwesome.Sharp.IconButton iconButton7;
-        private System.Windows.Forms.Label label1;
     }
 }
 
