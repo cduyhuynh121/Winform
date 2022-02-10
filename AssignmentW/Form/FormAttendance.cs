@@ -439,6 +439,31 @@ namespace AssignmentW
             comboBoxtea.Text = dataGridView2.Rows[numrow].Cells[7].Value.ToString();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void FormAttendance_Load(object sender, EventArgs e)
         {
             loadcombobx();
