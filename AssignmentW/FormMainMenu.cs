@@ -211,5 +211,10 @@ namespace AssignmentW
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void iconButton7_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
