@@ -98,6 +98,35 @@ create table AttendanceDetails
 	[Status] int, 
 	Others nvarchar(100)
 )
+create table Division(
+IDDivision int identity primary key,
+IDTeacher varchar(50) references Teacher(IDTeacher),
+IDClass varchar(50) references Class(IDClass),
+IDSub varchar(50) references Subject(IDSub),
+Hour int, 
+Date datetime, 
+Note varchar(255)
+)
+create table Timekeeping(
+IDTime int identity primary key,
+IDTeacher varchar(50) references Teacher(IDTeacher),
+Date datetime, 
+hour int  
+)
+create table Salary(
+IDSalary  int identity primary key,
+IDDegree varchar(50) references Degree(IDDegree), 
+salary int,
+hour int
+)
+
+create table SalaryOfTea(
+IDSlaryOfTea  int identity primary key,
+IDTeacher varchar(50) references Teacher(IDTeacher),
+IDSalary  int references Salary(IDSalary),
+hour int ,
+totalMoney int
+)
 
 --INSERT TABLE [dbo].[StudyProgram]
 INSERT INTO [dbo].[StudyProgram] VALUES ('Aptech', 'Short-term')
